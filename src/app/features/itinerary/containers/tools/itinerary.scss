@@ -1,0 +1,391 @@
+/*
+    ____  _ ______      _____
+   / __ \(_) ____/___ _/ ___/____ _
+  / /_/ / / / __/ __ `/\__ \/ __ `/
+ / _, _/ / /_/ / /_/ /___/ / /_/ /
+/_/ |_/_/\____/\__,_//____/\__,_/
+*/
+/******************************************************************************/
+/*                                                                            */
+/* @class          :                                                          */
+/* @fullname       : Ri.Ga.Sa Itinerary CSS                                   */
+/*                                                                            */
+/* @package        : Itineraries                                              */
+/* @subpackage     : Utilities                                                */
+/*                                                                            */
+/* @file           : dev/app/pages/templates/itinerary.css                    */
+/* @author         : Ri.Ga.Sa                                                 */
+/* @create         : 2018-04-22                                               */
+/* @version        : 0.0.2                                                    */
+/* @updated        : 2018-05-04                                               */
+/*                                                                            */
+/******************************************************************************/
+p.itineraire-title { color: #000000; font-size: 16px; font-weight: bold; margin-bottom: 10px; font-family: Georgia, "Times New Roman", Times, serif; padding:0px; }
+#MENU-actions-container, #MENU-options-container { padding:0px 10px; }
+#content { min-height: 854px; padding: 3px 0 3px 3px; }
+#content, #content h2 { hyphens: auto; word-wrap: break-word; }
+.itineraire-links { list-style: none outside none; margin: 0; padding: 0; }
+.itineraire-links li { float: none; list-style: none outside none; margin: 0 0 3px; padding: 0; padding-bottom: 4px !important; }
+.itineraire-links li a { background-image: url("http://code.genevedurable.ch/latest/assets/images/arrow-mini-blue.png"); background-position: 0 2px; background-repeat: no-repeat; color: #20409A !important; padding: 2px 10px 2px 24px; font-size: 13px; font-family: Georgia, sans-serif; }
+#left-box h5 { color: #651E92; font: bold 110%/160% Georgia, "Times New Roman", Times, serif; margin: 0; padding-bottom: 5px; padding-top: 15px; text-align: left; }
+#left-box p.itineraire-title { color: #000000; font-family: Georgia, "Times New Roman", Times, serif; font-size: 16px; font-weight: bold; margin-bottom: 10px; padding: 0; }
+#left-box p { color: #651E92; font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; font-size: 13px; font-style: normal; font-weight: normal; line-height: 150%; margin-bottom: 5px; margin-top: 0; padding-left: 10px; }
+#left-box h3 { background-color: #651E92; color: #FFFFFF; font: 110%/20px "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; letter-spacing: 1px; margin: 0; padding: 1px 0 1px 10px; text-transform: uppercase; }
+#left-box ul li { float: none; list-style: none outside none; margin: 0 0 3px; padding: 0; }
+#left-box.itinerary-left .widget { margin-bottom:0px; }
+/*---------------------------------
+| ACCORDION
+----------------------------------*/
+.accordion-container ul { list-style:none; margin:0px; padding:0px; }
+.accordion-container .accordion-content .accordion-toggle { font-weight:bold; color:#20409A !important; font-family: "ITCFranklin", Arial, sans-serif; font-size: 14px; display: block; margin: 6px 0; height: 16px; }
+.accordion-content ul { padding-left:10px; }
+.accordion-content ul li a.active { color:#990000; }
+.accordion-toggle.dot-green, .accordion-toggle.dot-blue, .accordion-toggle.dot-gray { background-repeat:no-repeat; background-position: 0px 0px; padding-left: 20px; }
+.accordion-toggle.dot-green { background-image:url(http://code.genevedurable.ch/latest/assets/images/gmaps/dot-green-16.png); }
+.accordion-toggle.dot-blue { background-image:url(http://code.genevedurable.ch/latest/assets/images/gmaps/dot-blue-16.png); }
+.accordion-toggle.dot-gray { background-image:url(http://code.genevedurable.ch/latest/assets/images/gmaps/dot-gray-16.png); }
+li.active > a.accordion-toggle { background:none; padding-left:0px; }
+/*---------------------------------
+| ICONES
+----------------------------------*/
+#left-box .icons-numbers { padding: 0px; margin:0; list-style:none; }
+#left-box .icons-numbers li { padding-bottom: 4px; margin:0px; list-style:none; }
+#left-box .icons-numbers li a { font-family: Georgia, "Times New Roman", Times, serif; font-size: 12px; font-weight: bold; letter-spacing: -0.3px; padding: 2px 10px 2px 24px; display: block; }
+.icon-blue-0, .icon-blue-1, .icon-blue-2, .icon-blue-3, .icon-blue-4, .icon-blue-5, .icon-blue-6, .icon-blue-7, .icon-blue-8, .icon-blue-9, .icon-blue-10, .icon-blue-11, .icon-blue-12, .icon-blue-13, .icon-blue-14, .icon-blue-15, .icon-blue-16, .icon-blue-17, .icon-blue-18, .icon-blue-19, .icon-blue-20, .icon-blue-21, .icon-blue-22, .icon-blue-23, .icon-blue-24, .icon-blue-25 { background-position: 4px 4px; background-repeat: no-repeat; color: #00AEEF !important; }
+.icon-blue-0 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-1.png"); }
+.icon-blue-1 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-2.png"); }
+.icon-blue-2 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-3.png"); }
+.icon-blue-3 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-4.png"); }
+.icon-blue-4 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-5.png"); }
+.icon-blue-5 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-6.png"); }
+.icon-blue-6 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-7.png"); }
+.icon-blue-7 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-8.png"); }
+.icon-blue-8 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-9.png"); }
+.icon-blue-9 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-10.png"); }
+.icon-blue-10 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-11.png"); }
+.icon-blue-11 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-12.png"); }
+.icon-blue-12 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-13.png"); }
+.icon-blue-13 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-14.png"); }
+.icon-blue-14 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-15.png"); }
+.icon-blue-15 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-16.png"); }
+.icon-blue-16 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-17.png"); }
+.icon-blue-17 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-18.png"); }
+.icon-blue-18 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-19.png"); }
+.icon-blue-19 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-20.png"); }
+.icon-blue-20 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-21.png"); }
+.icon-blue-21 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-22.png"); }
+.icon-blue-22 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-23.png"); }
+.icon-blue-23 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-24.png"); }
+.icon-blue-24 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-25.png"); }
+.icon-blue-25 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/blue/marker-26.png"); }
+.icon-green-0, .icon-green-1, .icon-green-2, .icon-green-3, .icon-green-4, .icon-green-5, .icon-green-6, .icon-green-7, .icon-green-8, .icon-green-9, .icon-green-10, .icon-green-11, .icon-green-12, .icon-green-13, .icon-green-14, .icon-green-15, .icon-green-16, .icon-green-17, .icon-green-18, .icon-green-19, .icon-green-20, .icon-green-21, .icon-green-22, .icon-green-23, .icon-green-24, .icon-green-25, .icon-green-26, .icon-green-27, .icon-green-28, .icon-green-29, .icon-green-30 { background-position: 4px 4px; background-repeat: no-repeat; color: #40AE49 !important; }
+.icon-green-0 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-1.png"); }
+.icon-green-1 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-2.png"); }
+.icon-green-2 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-3.png"); }
+.icon-green-3 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-4.png"); }
+.icon-green-4 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-5.png"); }
+.icon-green-5 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-6.png"); }
+.icon-green-6 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-7.png"); }
+.icon-green-7 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-8.png"); }
+.icon-green-8 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-9.png"); }
+.icon-green-9 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-10.png"); }
+.icon-green-10 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-11.png"); }
+.icon-green-11 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-12.png"); }
+.icon-green-12 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-13.png"); }
+.icon-green-13 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-14.png"); }
+.icon-green-14 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-15.png"); }
+.icon-green-15 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-16.png"); }
+.icon-green-16 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-17.png"); }
+.icon-green-17 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-18.png"); }
+.icon-green-18 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-19.png"); }
+.icon-green-19 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-20.png"); }
+.icon-green-20 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-21.png"); }
+.icon-green-21 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-22.png"); }
+.icon-green-22 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-23.png"); }
+.icon-green-23 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-24.png"); }
+.icon-green-24 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-25.png"); }
+.icon-green-25 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-26.png"); }
+.icon-green-26 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-27.png"); }
+.icon-green-27 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-28.png"); }
+.icon-green-28 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-29.png"); }
+.icon-green-29 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/green/marker-30.png"); }
+.icon-gray-0, .icon-gray-1, .icon-gray-2, .icon-gray-3, .icon-gray-4, .icon-gray-5, .icon-gray-6, .icon-gray-7, .icon-gray-8, .icon-gray-9, .icon-gray-10, .icon-gray-11, .icon-gray-12, .icon-gray-13, .icon-gray-14, .icon-gray-15, .icon-gray-16, .icon-gray-17, .icon-gray-18, .icon-gray-19, .icon-gray-20, .icon-gray-21, .icon-gray-22, .icon-gray-23, .icon-gray-24, .icon-gray-25 { background-position: 4px 4px; background-repeat: no-repeat; color: #666666 !important; }
+.icon-gray-0 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-1.png"); }
+.icon-gray-1 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-2.png"); }
+.icon-gray-2 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-3.png"); }
+.icon-gray-3 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-4.png"); }
+.icon-gray-4 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-5.png"); }
+.icon-gray-5 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-6.png"); }
+.icon-gray-6 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-7.png"); }
+.icon-gray-7 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-8.png"); }
+.icon-gray-8 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-9.png"); }
+.icon-gray-9 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-10.png"); }
+.icon-gray-10 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-11.png"); }
+.icon-gray-11 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-12.png"); }
+.icon-gray-12 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-13.png"); }
+.icon-gray-13 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-14.png"); }
+.icon-gray-14 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-15.png"); }
+.icon-gray-15 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-16.png"); }
+.icon-gray-16 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-17.png"); }
+.icon-gray-17 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-18.png"); }
+.icon-gray-18 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-19.png"); }
+.icon-gray-19 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-20.png"); }
+.icon-gray-20 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-21.png"); }
+.icon-gray-21 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-22.png"); }
+.icon-gray-22 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-24.png"); }
+.icon-gray-23 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-24.png"); }
+.icon-gray-24 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-25.png"); }
+.icon-gray-25 { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/gray/marker-26.png"); }
+.icon-blue-0.active, .icon-blue-1.active, .icon-blue-2.active, .icon-blue-3.active, .icon-blue-4.active, .icon-blue-5.active, .icon-blue-6.active, .icon-blue-7.active, .icon-blue-8.active, .icon-blue-9.active, .icon-blue-10.active, .icon-blue-11.active, .icon-blue-12.active, .icon-blue-13.active, .icon-blue-14.active, .icon-blue-15.active, .icon-blue-16.active, .icon-blue-17.active, .icon-blue-18.active, .icon-blue-19.active, .icon-blue-20.active, .icon-blue-21.active, .icon-blue-22.active, .icon-blue-23.active, .icon-blue-24.active, .icon-blue-25.active, .icon-green-0.active, .icon-green-1.active, .icon-green-2.active, .icon-green-3.active, .icon-green-4.active, .icon-green-5.active, .icon-green-6.active, .icon-green-7.active, .icon-green-8.active, .icon-green-9.active, .icon-green-10.active, .icon-green-11.active, .icon-green-12.active, .icon-green-13.active, .icon-green-14.active, .icon-green-15.active, .icon-green-16.active, .icon-green-17.active, .icon-green-18.active, .icon-green-19.active, .icon-green-20.active, .icon-green-21.active, .icon-green-22.active, .icon-green-23.active, .icon-green-24.active, .icon-green-25.active, .icon-green-26.active, .icon-green-27.active, .icon-green-28.active, .icon-green-29.active, .icon-gray-0.active, .icon-gray-1.active, .icon-gray-2.active, .icon-gray-3.active, .icon-gray-4.active, .icon-gray-5.active, .icon-gray-6.active, .icon-gray-7.active, .icon-gray-8.active, .icon-gray-9.active, .icon-gray-10.active, .icon-gray-11.active, .icon-gray-12.active, .icon-gray-13.active, .icon-gray-14.active, .icon-gray-15.active, .icon-gray-16.active, .icon-gray-17.active, .icon-gray-18.active, .icon-gray-19.active, .icon-gray-20.active, .icon-gray-21.active, .icon-gray-22.active, .icon-gray-23.active, .icon-gray-24.active, .icon-gray-25.active { background-color: #20409A !important; color: #FFFFFF !important; }
+.icon-blue-0.active, .icon-green-0.active, .icon-gray-0.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-1-active.png"); }
+.icon-blue-1.active, .icon-green-1.active, .icon-gray-1.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-2-active.png"); }
+.icon-blue-2.active, .icon-green-2.active, .icon-gray-2.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-3-active.png"); }
+.icon-blue-3.active, .icon-green-3.active, .icon-gray-3.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-4-active.png"); }
+.icon-blue-4.active, .icon-green-4.active, .icon-gray-4.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-5-active.png"); }
+.icon-blue-5.active, .icon-green-5.active, .icon-gray-5.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-6-active.png"); }
+.icon-blue-6.active, .icon-green-6.active, .icon-gray-6.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-7-active.png"); }
+.icon-blue-7.active, .icon-green-7.active, .icon-gray-7.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-8-active.png"); }
+.icon-blue-8.active, .icon-green-8.active, .icon-gray-8.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-9-active.png"); }
+.icon-blue-9.active, .icon-green-9.active, .icon-gray-9.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-10-active.png"); }
+.icon-blue-10.active, .icon-green-10.active, .icon-gray-10.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-11-active.png"); }
+.icon-blue-11.active, .icon-green-11.active, .icon-gray-11.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-12-active.png"); }
+.icon-blue-12.active, .icon-green-12.active, .icon-gray-12.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-13-active.png"); }
+.icon-blue-13.active, .icon-green-13.active, .icon-gray-13.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-14-active.png"); }
+.icon-blue-14.active, .icon-green-14.active, .icon-gray-14.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-15-active.png"); }
+.icon-blue-15.active, .icon-green-15.active, .icon-gray-15.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-16-active.png"); }
+.icon-blue-16.active, .icon-green-16.active, .icon-gray-16.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-17-active.png"); }
+.icon-blue-17.active, .icon-green-17.active, .icon-gray-17.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-18-active.png"); }
+.icon-blue-18.active, .icon-green-18.active, .icon-gray-18.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-19-active.png"); }
+.icon-blue-19.active, .icon-green-19.active, .icon-gray-19.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-20-active.png"); }
+.icon-blue-20.active, .icon-green-20.active, .icon-gray-20.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-21-active.png"); }
+.icon-blue-21.active, .icon-green-21.active, .icon-gray-21.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-22-active.png"); }
+.icon-blue-22.active, .icon-green-22.active, .icon-gray-22.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-24-active.png"); }
+.icon-blue-23.active, .icon-green-23.active, .icon-gray-23.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-24-active.png"); }
+.icon-blue-24.active, .icon-green-24.active, .icon-gray-24.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-25-active.png"); }
+.icon-blue-25.active, .icon-green-25.active, .icon-gray-25.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-26-active.png"); }
+.icon-blue-26.active, .icon-green-26.active, .icon-gray-26.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-27-active.png"); }
+.icon-blue-27.active, .icon-green-27.active, .icon-gray-27.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-28-active.png"); }
+.icon-blue-28.active, .icon-green-28.active, .icon-gray-28.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-29-active.png"); }
+.icon-blue-29.active, .icon-green-29.active, .icon-gray-29.active { background-image: url("http://code.genevedurable.ch/latest/assets/images/gmaps/active/marker-30-active.png"); }
+#map-description { font-size: 13px; height: auto; margin-top: 3px; position: relative; width: 100%; }
+#map-desc-left { float: none; text-align: justify; width: 100%; font-family: Georgia, sans-serif; min-height:451px; padding-left:10px; margin-top: 14px; }
+#map-desc-title.map-title { color: #000000; font: 24px/26px "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; margin: 0 0 14px; padding: 10px 0 0; text-transform: none; text-shadow: 1px 1px 2px #6374AB; }
+#map-desc-body h2 { color: #666666; font-family: Georgia, sans-serif; font-size: 24px; font-weight: bold; margin-bottom: 0; margin-top: 10px; padding-bottom: 5px; line-height: 120%; }
+#map-desc-left h3 { font-family: "ITCFranklin", Arial, sans-serif; font-size: 16px; font-weight: bold; color: #000000; text-shadow: 1px 1px 2px #6374AB; margin-bottom: 10px; margin-top: 16px; }
+#map-desc-body h4 { color: #651E92; font: 120%/130% "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; margin-bottom: 0; padding-bottom: 5px; margin-top:25px; }
+#map-desc-left p { font-size: 14px; line-height: 150%; margin-bottom: 5px; margin-top: 0; }
+#map-desc-left p.theme-subtitle { font-size: 16px; line-height: 140%; margin-bottom: 14px; margin-top: 10px; }
+/**/
+table.car { display: table; font-family: Georgia, sans-serif; font-size: 13px; width: 100%; }
+td.car1 { background-color: #FFFFFF; border-top: 1px solid #651E92; color: #000000; display: table-cell; font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; margin: 0; padding: 1px 5px; text-align: left; width: 200px; }
+td.car2 { background-color: #CCDCDE; color: #000000; display: table-cell; font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; padding: 1px 5px; text-align: left; width: 280px; }
+.map-menu-right .toggle-menu { background: none repeat-x scroll 0 0 #651E92; padding: 1px 0 1px 5px; line-height: 150%; margin-bottom: 5px; margin-top: 0; }
+.map-menu-right .toggle-menu a { font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+.toggle-menu a { color: #FFFFFF; }
+.map-menu-right ul.itineraire-links { margin-bottom: 10px; }
+/**/
+.itineraire-links { list-style: none outside none; margin: 0; padding: 0; }
+.itineraire-links li { padding-bottom: 4px !important; }
+.itineraire-links li a { background-image: url("http://code.genevedurable.ch/latest/assets/images/arrow-mini-blue.png"); background-position: 0 2px; background-repeat: no-repeat; color: #20409A !important; padding: 2px 10px 2px 24px; font-size: 13px; font-family: Georgia, sans-serif; }
+#map-desc-le-saviez-vous li a { background-image: url("http://code.genevedurable.ch/latest/assets/images/icon-link-infos.png"); background-position: 4px 2px; background-repeat: no-repeat; color: #20409A !important; font-size: 12px; padding: 2px 10px 2px 24px; }
+#map-desc-le-saviez-vous ul li.icn-link { background-image: url("http://code.genevedurable.ch/latest/assets/images/aerobase-mini-blue.png"); background-position: 4px 2px; background-repeat: no-repeat; font-size: 12px; padding: 2px 10px 2px 24px; }
+#map-desc-le-saviez-vous ul li.icn-link a { background: none repeat scroll 0 0 transparent; padding: 0; }
+#map-desc-left ul li, #map-desc-left ol li { padding-bottom:4px; line-height:150%; }
+#GM-objects-list { display:none; }
+#GM-objects-list h3 span { font-size:100%; font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; }
+/**/
+#GM-markers { padding-left:10px; padding-top:15px; }
+#ITI-agrement li a { background-position: 4px 2px; background-repeat: no-repeat; color: #20409A !important; padding: 2px 10px 2px 24px; }
+.LI-decal { margin-left: 24px; }
+.UL-numbers { font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; list-style: none outside none; margin: 0; padding: 0; }
+.UL-numbers ul.list-tiret { margin-bottom: 6px; margin-left: 32px; }
+.list-tiret { list-style: none outside none; margin: 0; padding: 0; font-size: 13px; }
+.list-tiret li { background-image: url("http://code.genevedurable.ch/latest/assets/images/ul-tiret-black.jpg"); background-position: left 8px; background-repeat: no-repeat; padding-left: 16px; font-size: 13px; line-height: 135%; text-align: left; }
+.MARK-number { background-image: url("http://code.genevedurable.ch/latest/assets/images/icon-archtectural.jpg"); background-position: left top; background-repeat: no-repeat; border: medium none; font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; font-size: 10px; font-weight: bold; height: 20px; line-height: 22px; position: absolute; text-align: center; width: 20px; }
+.MARK-detente { background-image: url("http://code.genevedurable.ch/latest/assets/images/icon-detente.jpg"); background-position: left top; background-repeat: no-repeat; border: medium none; display: block; font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; font-weight: bold; height: 20px; line-height: 22px; text-align: left; text-indent: 24px; width: 100%; }
+#INC-bibliographie { width: auto; }
+#INC-bibliographie #CBOX-page-include-left .INC-content, #INC-bibliographie #CBOX-page-include-right .INC-content { height: 274px; overflow: auto; }
+#INC-bibliographie #CBOX-page-include-left .INC-content ul, #INC-bibliographie #CBOX-page-include-right .INC-content ul { list-style: none outside none; padding-left: 0; padding-right: 0px; }
+h4 img { vertical-align:middle; }
+#INC-bibliographie .list-tiret { margin-bottom:16px; }
+.list-square { list-style-type: square; padding: 0 0 0 16px; line-height: normal; }
+/**/
+#MENU-options { padding: 15px 0px; }
+#MENU-options p.toggle-menu { padding-left:0px; }
+#MENU-options p.toggle-menu a { color: #651E92; font-family: Georgia, sans-serif; font-size: 13px; line-height: 12px; }
+#MENU-options ul { list-style: none outside none; padding: 0; }
+#map-desc-right { width: 163px; float:right; position:relative; display:none; }
+#map-desc-right .map-photos-right { overflow: hidden; position: relative; width: 100%; min-height:451px !important; overflow-y: auto; }
+#map-desc-right .map-photos-right ul { }
+#map-desc-right .map-photos-right ul li { }
+#map-desc-right .map-photos-right ul li a { display: block; width: 100%; }
+#map-desc-right .map-photos-right ul li a img { height: auto; width: 100%; }
+/*---------------------------------
+| LEGENDE
+----------------------------------*/
+#map-legend { background-color: #CCCCCC; display: none; font-family: 'ITCFranklin', Arial, sans-serif; height: auto; margin: 6px 0 0 6px; padding-bottom: 4px; position: absolute; top: 0; z-index: 1000; left:-200px; }
+#map-legend h3 { background: none repeat scroll 0 0 #999999; color: #000000; font-size: 12px; font-weight: normal; height: 16px; line-height: 16px; margin: 0 0 4px; padding: 0 6px; text-transform: uppercase; }
+#map-legend p { font-size: 10px; line-height: 14px; margin: 0; padding: 0 6px; font-family: 'ITCFranklin', Arial, sans-serif; }
+#map-legend p span { display: block; float: left; height: 4px; margin-right: 6px; margin-top: 5px; width: 20px; }
+#map-legend p img { height: 16px; margin-right: 5px; vertical-align: top; }
+/*---------------------------------
+| TOOLTIPS
+----------------------------------*/
+.link-glossary-dd { color:#CC6600 !important; text-decoration: underline; font-weight: bold; }
+.link-glossary { color:#009900 !important; text-decoration: underline; font-weight: bold; }
+.link-abbreviation { color:#0066CC !important; text-decoration: underline; }
+.simpletooltip { padding:10px; max-width:350px !important; border-radius: 7px 7px 7px 7px; background: none repeat-x scroll 0 0 #EFEFEF; border: 1px solid #651E92; }
+.simpletooltip-close { text-align:right; float:right; }
+.simpletooltip-title, .simpletooltip-title_dd, .simpletooltip-title_abbr { font: 200%/100% "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; margin-bottom: 10px; margin-top: 0; }
+.simpletooltip-subtitle { font-family: "ITCFranklin", Arial, sans-serif; font-size: 14px; }
+.simpletooltip-title { color: #009900; }
+.simpletooltip-title_dd { color:#CC6600; }
+.simpletooltip-title_abbr { color:#0066CC; }
+.simpletooltip-desc { font-family: "ITCFranklin", Arial, sans-serif; font-size: 13px; }
+.simpletooltip-desc img { max-width:200px; height:auto; float:right; margin-left:10px; }
+/**/
+#map-desc-footer sup { padding-right:10px; }
+.theme-graybox { font-family: "ITCFranklin", Arial, sans-serif; font-size: 13px; color:#fff; background-color:#8b8b8b; padding:0px 4px; }
+ @media screen and (max-width: 321px) {
+ #main {
+margin-top: 1px;
+}
+ #MENU-actions-container {
+border-top: 1px solid #000;
+padding: 0.6rem 0.6rem 0;
+}
+ #MENU-actions-container > .moduletable {
+padding:0px;
+}
+ #map-desc-left {
+ float: none;
+ font-family: Georgia, sans-serif;
+ min-height: auto;
+ padding-left: 10px;
+ text-align: justify;
+ width: 100%;
+ clear: both;
+}
+ #map-desc-right {
+ display: none;
+ float: right;
+ position: relative;
+ width: 100%;
+}
+ #map-desc-right ul {
+padding-left: 20px;
+padding-top: 10px;
+}
+ #content {
+min-height:auto;
+padding: 0;
+}
+ #map-description {
+height: auto;
+width: 100%;
+}
+ #map-desc-left {
+padding-left: 0;
+text-align: left;
+height: auto !important;
+}
+ #map-desc-title.map-title {
+padding: 0.6rem 0 0 0.6rem;
+}
+ #map-desc-body {
+padding:0 0.6rem;
+}
+ #map-desc-body img {
+width:100%;
+height:auto;
+}
+ #map-legend {
+margin-top: 1.9rem;
+}
+ .focus {
+padding-bottom: 0.6rem !important;
+}
+ .focus ul {
+list-style:none;
+padding-left:0px !important;
+}
+ .focus ul li {
+line-height: 150%;
+}
+}
+@media screen and (max-width: 435px) {
+ #INC-bibliographie .CBOX-overflow {
+ height: auto;
+}
+ #INC-bibliographie #CBOX-page-include-left, #INC-bibliographie #CBOX-page-include-right {
+ padding-right: 0px;
+ width: 100%;
+ float:none;
+}
+ #INC-bibliographie #CBOX-page-include-left .INC-content, #INC-bibliographie #CBOX-page-include-right .INC-content {
+ padding-right:0px;
+ width:100%;
+ height:auto;
+}
+}
+/*---------------------------------
+| INFO PRINCIPLES
+----------------------------------*/
+#principles-list { border: 1px solid #ddd; border-radius: 10px; margin-top: 20px; padding: 10px; }
+/*---------------------------------
+| BOX INFO
+----------------------------------*/
+.box-info { }
+.box-info h2 { font: 200%/120% "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; margin: 0 0 0.6rem; padding: 0 0 0 10px; text-shadow: 1px 1px 2px #6374ab; border-left:5px solid #fff; }
+.box-info h3 { color: #20409a !important; font: 170%/120% "ITCFranklin", Arial, Helvetica, Geneva, sans-serif; margin: 16px 0 10px !important; padding-bottom: 0; }
+.box-info h3 a { color: #20409a !important; font: 110%/120% "ITCFranklin", Arial, Helvetica, Geneva, sans-serif !important; }
+.box-info p { font-size: 12px; margin-top: 0; margin-bottom: 14px; line-height: 150%; text-align: justify; hyphens: auto; word-wrap: break-word; }
+.decal { padding-left:16px; }
+.page-sub-title { font-weight:bold; color: #651e92; font: 140%/100% "ITCFranklin", Arial, Helvetica, Geneva, sans-serif !important; }
+.page-sub-title a { font-weight:bold; color: #651e92; font: 120%/100% "ITCFranklin", Arial, Helvetica, Geneva, sans-serif !important; }
+.box-info img { max-height:200px; width:auto; height:auto; vertical-align:middle; }
+/*---------------------------------
+| INFO ODD
+----------------------------------*/
+.odd-level-0 { margin-bottom: 40px; }
+.odd-level-1 { margin-top: 30px; }
+.odd-level-2 { margin-top: 20px; }
+ [class*="span"] {
+ float: left;
+ min-height: 1px;
+}
+.main-column { position: relative; }
+.span4 { width: 30%; }
+.span8 { width: 70%; }
+#tools-tabs { margin-top: 40px; }
+#tools-tabs .left-navigation { width: 30%; }
+#tools-tabs .left-navigation ul > li a { color: #757575; border-left: 0.4em solid transparent; display: block; font-size: 1.1em; line-height: 1.2; }
+#tools-tabs .left-navigation ul > li a span { border-bottom: 1px solid #cccccc; display: block; padding: 0.8em 0; }
+#tools-tabs .left-navigation ul > li a span:last-child { border-bottom: none; }
+.left_nav_item { margin-left: 10px; }
+#tools-tabs .left-navigation ul > li a.active, #tools-tabs .left-navigation ul > li a:active, #tools-tabs .left-navigation ul > li a:hover, #tools-tabs .left-navigation ul > li a:focus { color: #651e92; border-left: 0.4em solid #651e92; }
+#tools-tabs .left-navigation ul > li a span.active { border-bottom: 0 none; color: #000000; display: block; font-size: 1em; line-height: 1.2; padding: 0; }
+#tools-tabs-panes { }
+#tools-tabs-panes .tools-pane { display:none; padding: 0 20px; }
+#tools-tabs-panes .tools-pane.active { display:block; }
+.tools-pane h2 > img { margin-right: 10px; vertical-align: middle; }
+.box-info-include h2 { min-height: 189px; }
+.box-info-include h2 img { margin-right: 10px; float: left; margin-bottom: 20px; }
+.box-info-include h3 { padding-right:10px; }
+.box-info-include p.decal { padding-right:10px; }
+
+/* --------------------------- */
+.box-encart { background-color:#e1e1e1; padding:10px; margin:20px 0px; }
+.box-encart h3 { font-family: "ITCFranklin", Arial, Helvetica, sans-serif !important; font-weight:normal !important; }
+.box-encart h3:first-child { margin-top:0px !important; }
+.box-encart p, .box-encart ul li  { font-family: "ITCFranklin", Arial, Helvetica, sans-serif; }
+
+.box-focus, .focus { background-color:#e1e1e1; padding: 0 0 2px; margin:20px 0px;  background-color:#d1d1d1; }
+.box-focus h3, .focus h3 { font-family: "ITCFranklin", Arial, Helvetica, sans-serif !important; font-weight:normal !important; text-transform:uppercase; background-color:#777; line-height:normal; padding: 6px 10px; }
+.box-focus ul, .focus ul { margin-left: 16px; }
+.box-focus p, .box-focus li, .focus p, .focus li { font-family: "ITCFranklin", Arial, Helvetica, sans-serif; padding:0 10px 2px; hyphens: auto;
+    overflow-wrap: break-word; }
+#map-desc-body > p img.logo-intern { width: 100%; }
+
+#right-box .map-photos-right li a img { width: 100%; height: auto; }
+.card-title i.material-icons { color:#673ab7; }

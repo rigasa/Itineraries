@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>{{ pageTitle }}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item-sliding ion-item *ngFor="let itinerary of itineraries$|async">
+
+            <ion-item text-wrap button detail (click)="goItinerary( itinerary )" *ngIf="itinerary.iti_type !== '0'">
+                <ion-label>
+                    <ion-text color="primary">
+                        <h2>{{itinerary?.iti_name}}</h2>
+                    </ion-text>
+                </ion-label>
+            </ion-item>
+
+            <ion-item-options side="end">
+                <ion-item-option expandable>
+                    <ion-icon name="heart" (click)="setFavorit( itinerary )"></ion-icon>
+                </ion-item-option>
+            </ion-item-options>
+
+        </ion-item-sliding>
+    </ion-list>
+
+</ion-content>
