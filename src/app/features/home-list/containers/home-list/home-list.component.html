@@ -1,17 +1,15 @@
-<ion-header>
-    <ion-toolbar color="primary">
-        <ion-title>{{ pageTitle }}</ion-title>
-    </ion-toolbar>
-</ion-header>
+<app-home-page-header></app-home-page-header>
 
 <ion-content>
+
     <ion-list>
         <ion-item-sliding ion-item *ngFor="let itinerary of itineraries$|async">
 
             <ion-item text-wrap button detail (click)="goItinerary( itinerary )" *ngIf="itinerary.iti_type !== '0'">
                 <ion-label>
                     <ion-text color="primary">
-                        <h2>{{itinerary?.iti_name}}</h2>
+                        <h2>
+                            <ion-icon name="walk"></ion-icon> {{itinerary?.iti_name}}</h2>
                     </ion-text>
                 </ion-label>
             </ion-item>

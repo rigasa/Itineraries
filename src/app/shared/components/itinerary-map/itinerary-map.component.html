@@ -1,4 +1,18 @@
-<p>
-    itinerary-map works!
-</p>
-<app-map [mapSettings]="defaultSettings"></app-map>
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+
+            <ion-button (click)="toDismiss()">
+                <ion-icon slot="icon-only" name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>
+            <ion-icon slot="icon-only" name="pin"></ion-icon>{{ language["POINTS_LIST"] }}</ion-title>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div id="gmap"></div>
+    <app-map [mapSettings]="mOptions" [mapPoints]="points$" [mapContext]="this"></app-map>
+</ion-content>

@@ -1,12 +1,13 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 //--------------------
 import { IItineraries } from '../../../../models/itineraries.model';
+//--------------------
 import { ItinerariesService } from '../../../../shared/services/itineraries/itineraries.service';
 import { IMapConfig } from '../../../../shared/components/map/map.config.interface';
 import { ConfigService } from '../../../../shared/services/config/config.service';
+import { FavoritesService } from '../../../../shared/services/favorites/favorites.service';
 //--------------------
 @Component({
   selector: 'app-home-map',
@@ -16,8 +17,8 @@ import { ConfigService } from '../../../../shared/services/config/config.service
 })
 export class HomeMapComponent implements OnInit {
 
+  //-----------------------
   public itineraries$: Observable<any[]>;
-
   public defaultSettings: IMapConfig = {
     latitude: 46.2587, 
     longitude: 6.11938, 
@@ -25,31 +26,32 @@ export class HomeMapComponent implements OnInit {
     customStyle: true,
     markers: []
   };
-  public pageTitle: string;
-  
+  public language: string[] = [];
+  //-----------------------
   constructor( 
     private _router: Router,
     private _itiService: ItinerariesService,
-    private _config: ConfigService
+    private _config: ConfigService,
+    private _fav: FavoritesService
   ) { }
-
+  //-----------------------
   ngOnInit() {
-    this._itiService.loadItineraries().subscribe( itis => {
-      this.defaultSettings.markers =  itis;
+    this.itineraries$ = this._itiService.loadItineraries();
+    this._config.getCurLanguage().then( ( language ) => {
+      this.language = language;
     });
-    this._config.getCurLanguage().then( ( val ) => {
-      this.pageTitle = val.CHOICE_ITINERARY;
-    });
-    
   }
-
+  //-----------------------
   goItinerary( itinerary: IItineraries ): void {
-    //console.log('::: Go to itinerary', itinerary );
     this._router.navigate(['itinerary', itinerary.id ] );
   }
-
+  //-----------------------
   setFavorit( itinerary: IItineraries ): void {
-    console.log('::: Save Favorit', itinerary );
+    this._fav.setItineraryFavorite( itinerary );
   }
-
+  //-----------------------
+  shareFavorite( itinerary: IItineraries ): void {
+    this._fav.shareItineraryFavorite( itinerary );
+  }
+  //-----------------------
 }

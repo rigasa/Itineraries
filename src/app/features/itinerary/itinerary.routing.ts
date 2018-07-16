@@ -7,15 +7,17 @@ const routes: Routes = [
   {
     path: ':id',
     component: ItineraryCoverComponent
-  },/*{
-    path: ':id/:id',
+  },
+  {
+    path: ':id/:pointid',
     component: ItineraryPointComponent
-  },*/
+  },
   {
     path: '',
     redirectTo: '/home/(map:map)'
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

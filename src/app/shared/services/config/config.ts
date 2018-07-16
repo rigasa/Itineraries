@@ -16,7 +16,8 @@ export let Config: object =  {
         cdn_img_url: "http://code.genevedurable.ch/latest/assets/images/",
         cdn_photos_url: "http://code.genevedurable.ch/latest/assets/itineraires/img/",
         cdn_odd_img_url: "http://code.genevedurable.ch/latest/assets/itineraires/assets/ODD/img/",
-        gmaps_url: "https://maps.googleapis.com/maps/api/js?v=3.exp"
+        gmaps_url: "https://maps.googleapis.com/maps/api/js?v=3.exp",
+        blasons_url: "http://code.genevedurable.ch/latest/assets/images/blasons/thumbs-35/"
       
       },
       gmaps: {

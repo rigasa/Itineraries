@@ -9,18 +9,35 @@ import { ItineraryCoverComponent } from './containers/itinerary-cover/itinerary-
 import { ItineraryPointComponent } from './containers/itinerary-point/itinerary-point.component';
 import { ReplaceUrlPipe } from '../../pipes/replace-url.pipe';
 
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule } from '@angular/material';
+import { ItineraryPointsComponent } from '../../shared/components/itinerary-points/itinerary-points.component';
+import { ItineraryMapComponent } from '../../shared/components/itinerary-map/itinerary-map.component';
+import { MapComponent } from '../../shared/components';
+
 @NgModule({
   imports: [
     SharedModule,
     IonicModule,
     CommonModule,
-    ItineraryRoutingModule
+    ItineraryRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatCardModule
   ],
+  entryComponents: [ItineraryPointsComponent, ItineraryMapComponent],
   declarations: [
     ItineraryCoverComponent, 
     ItineraryPointComponent,
-    ReplaceUrlPipe
+    ItineraryPointsComponent,
+    ItineraryMapComponent,
+    ReplaceUrlPipe,
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [
+    MapComponent
+  ]
 })
 export class ItineraryModule { }

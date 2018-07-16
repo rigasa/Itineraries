@@ -23,6 +23,7 @@ _tempLanguages['fr-FR'] =  {
     "RGSMAP_LEGEND":"Légende",
     "RGSMAP_ITINERARY":"Tracé du parcours",
     "RGSMAP_BTN_SHOW":"Voir",
+    "RGSMAP_BTN_SHOW_ITINERARY":"Voir l'itinéraire",
     "RGSMAP_BTN_SHOW_DESC":"Clic pour afficher le panorama",
     "RGSMAP_BTN_ITINERARY":"Itinéraire",
     "RGSMAP_BTN_ITINERARY_DESC":"Clic pour revenir à l'état initial",
@@ -60,7 +61,10 @@ _tempLanguages['fr-FR'] =  {
     "USER_LOGOUT": "Déconnecter",
     "USER_CONFIRM_LOGOUT": "Voulez-vous VRAIMENT vous déconnecter ?",
     "CONFIRM_DISGREE": "Annuler",
-    "CONFIRM_AGREE": "OK"
+    "CONFIRM_AGREE": "OK",
+    "LOADING_ITINERARY": "Chargement de l'itinéraire...",
+    "LOADING_POINT": "Chargement du point...",
+    "POINTS_LIST": "Liste des points"
 };
 _tempLanguages['en-UK'] =  {
     "HOME":"Home",
@@ -85,6 +89,7 @@ _tempLanguages['en-UK'] =  {
     "RGSMAP_LEGEND":"Legend",
     "RGSMAP_ITINERARY":"Course layout",
     "RGSMAP_BTN_SHOW":"View",
+    "RGSMAP_BTN_SHOW_ITINERARY":"View itinerary",
     "RGSMAP_BTN_SHOW_DESC":"Click to display the panorama",
     "RGSMAP_BTN_ITINERARY":"Itinerary",
     "RGSMAP_BTN_ITINERARY_DESC":"Click to return to the initial state",
@@ -122,7 +127,10 @@ _tempLanguages['en-UK'] =  {
     "USER_LOGOUT": "Logout",
     "USER_CONFIRM_LOGOUT": "Do you REALLY want to log out?",
     "CONFIRM_DISGREE": "Disagree",
-    "CONFIRM_AGREE": "Agree"
+    "CONFIRM_AGREE": "Agree",
+    "LOADING_ITINERARY": "Loading itinerary...",
+    "LOADING_POINT": "Loading point...",
+    "POINTS_LIST": "Points List"
 };
 
 export let Languages:Array<any> = _tempLanguages;

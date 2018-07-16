@@ -13,11 +13,13 @@ import { ItinerariesService } from './services/itineraries/itineraries.service';
 import { ConfigService } from './services/config/config.service';
 
 import { FavoritesService } from './services/favorites/favorites.service';
+import { UsersService } from './services/users/users.service';
+import { StorageService } from './services/storage/storage.service';
 //------------------------------
 const COMPONENTS: any[] = [
   MapComponent, 
-  ItineraryMapComponent, 
-  ItineraryPointsComponent
+  //ItineraryMapComponent, 
+  //ItineraryPointsComponent
 ];
 //------------------------------
 @NgModule({
@@ -26,6 +28,7 @@ const COMPONENTS: any[] = [
     IonicModule,
     HttpClientModule
   ],
+  //entryComponents: [ItineraryPointsComponent, ItineraryMapComponent],
   declarations: [...COMPONENTS],
   exports: [
     ...COMPONENTS,
@@ -35,7 +38,9 @@ const COMPONENTS: any[] = [
     GenericHttpService,
     ItinerariesService,
     ConfigService,
-    FavoritesService
+    FavoritesService,
+    UsersService,
+    StorageService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

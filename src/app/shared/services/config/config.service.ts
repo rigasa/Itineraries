@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { Config } from './config';
 import { Languages } from './languages.datas';
+//import { GenericHttpService } from '../generic-http/generic-http.service';
 
 const STORAGE_CONFIG_KEY = 'rgs_itineraries';
 
@@ -16,7 +17,8 @@ enum EConfig {
 export class ConfigService {
   //-----------------------------
   constructor(
-    private _storage: Storage
+    private _storage: Storage,
+    //private _http: GenericHttpService
   ) {
     //this.removeConfig();
     this.initializeConfig();
@@ -84,7 +86,7 @@ export class ConfigService {
 
         for (const _arg in val[ _constante ]) {
 
-          if( typeof( val[ _constante ][_arg ] ) === 'object' ){
+          if( ( typeof( val[ _constante ][_arg ] ) === 'object' ) && ( _item !== _arg ) ){
 
             for (const _child in val[ _constante ][ _arg ]) {
 

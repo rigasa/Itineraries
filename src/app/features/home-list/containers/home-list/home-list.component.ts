@@ -3,9 +3,11 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 //--------------------
 import { IItineraries } from '../../../../models/itineraries.model';
+//--------------------
 import { ItinerariesService } from '../../../../shared/services/itineraries/itineraries.service';
 import { FavoritesService } from '../../../../shared/services/favorites/favorites.service';
 import { ConfigService } from '../../../../shared/services/config/config.service';
+import { UsersService } from '../../../../shared/services/users/users.service';
 //--------------------
 @Component({
   selector: 'app-home-list',
@@ -15,53 +17,36 @@ import { ConfigService } from '../../../../shared/services/config/config.service
 })
 //--------------------
 export class HomeListComponent implements OnInit {
-
+  //-----------------------
   public itineraries$: Observable<any[]>;
-  public pageTitle: string;
-
+  public language: string[] = [];
+  //-----------------------
   constructor( 
     private _router: Router,
     private _itiService: ItinerariesService,
     private _config: ConfigService,
-    private _fav: FavoritesService
+    private _fav: FavoritesService,
+    private _us: UsersService
   ) { }
-
+  //-----------------------
   ngOnInit() {
     this.itineraries$ = this._itiService.loadItineraries();
-    this._config.getCurLanguage().then( ( val ) => {
-      this.pageTitle = val.CHOICE_ITINERARY;
+    this._config.getCurLanguage().then( ( language ) => {
+      this.language = language;
     });
-
-
   }
-
+  //-----------------------
   goItinerary( itinerary: IItineraries ): void {
     this._router.navigate(['itinerary', itinerary.id ] );
   }
-
+  //-----------------------
   setFavorit( itinerary: IItineraries ): void {
-    const _link = {
-      link: 'http://localhost:4200/itinerary/' + itinerary.id,
-      name: itinerary.iti_name
-    }
-    //
-    this._fav.setFavoriteItem( _link ).then(() => {
-      console.log('::: Save Favorit', _link );
-      //this.isFavorite = true;
-    });
-
+    this._fav.setItineraryFavorite( itinerary );
   }
-
-  shareFavorite( itinerary: IItineraries ) {
-    /*let email = {
-      to: 'saimon@devdactic.com',
-      subject: 'I love this one: ' + itinerary.iti_name,
-      body: 'Can you remember the opening?<br><br>\"' + this.film.opening_crawl + '\"',
-      isHtml: true
-    };
- 
-    this.emailComposer.open(email);*/
+  //-----------------------
+  shareFavorite( itinerary: IItineraries ): void {
+    this._fav.shareItineraryFavorite( itinerary );
   }
-
+  //-----------------------
 }
 //--------------------

@@ -1,7 +1,7 @@
 import { IItineraryCoordinates } from './itinerary-coordinates.model';
 import { IItineraryShortcut } from './itinerary-shortcut.model';
 import { IItineraryPage } from './itinerary-page.model';
-import { IItineraryMarkers } from './itinerary-markers.model';
+import { IItineraryMarker } from './itinerary-marker.model';
 
 export interface IItinerary {
   Itinerary?: {
@@ -28,7 +28,7 @@ export interface IItinerary {
   ItineraryCoordinates?: IItineraryCoordinates,
   ItineraryMarkers?: {
       total?: number,
-      datas?: Array<IItineraryMarkers>
+      datas?: Array<IItineraryMarker>
   },
   ItineraryPage?: IItineraryPage,
   ItineraryShortcut?: {

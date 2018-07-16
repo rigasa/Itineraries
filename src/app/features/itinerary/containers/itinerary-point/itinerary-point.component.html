@@ -1,3 +1,61 @@
-<p>
-  itinerary-point works!
-</p>
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-button (click)="goToHome()">
+                <ion-icon slot="icon-only" name="home"></ion-icon>
+            </ion-button>
+
+            <ion-button (click)="toBack()">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+        <ion-title text-center *ngIf="(point$|async) as itiPoint">{{ itiPoint.Marker?.imk_shortTitle }}</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button *ngIf="(point$|async) as itiPoint" (click)="goShare(itiPoint.Itinerary)">
+                <ion-icon slot="icon-only" name="share"></ion-icon>
+            </ion-button>
+
+            <ion-button (click)="mapOpen()">
+                <ion-icon slot="icon-only" name="pin"></ion-icon>
+            </ion-button>
+
+            <ion-button (click)="pointsOpen()">
+                <ion-icon slot="icon-only" name="list"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+
+    <div *ngIf="(point$|async) as itiPoint;else noPoint">
+
+        <ion-card class="example-card">
+            <ion-card-header>
+                <ion-card-title>{{ itiPoint.Marker?.imk_title }}</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+                <div [innerHTML]="itiPoint.Page?.imkp_header"></div>
+                <div [innerHTML]="itiPoint.Page?.imkp_body | replaceUrl:imgSearch:imgReplace"></div>
+                <div [innerHTML]="itiPoint.Page?.imkp_le_Saviez_Vous"></div>
+                <div [innerHTML]="itiPoint.Page?.imkp_link_DD"></div>
+                <div [innerHTML]="itiPoint.Page?.imkp_footer"></div>
+
+            </ion-card-content>
+
+        </ion-card>
+        <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="(point$|async) as itiPoint" (click)="goFavorite(itiPoint.Marker)">
+            <ion-fab-button>
+                <ion-icon name="heart"></ion-icon>
+            </ion-fab-button>
+        </ion-fab>
+    </div>
+    <ng-template #noPoint>{{language["LOADING_POINT"]}}</ng-template>
+
+</ion-content>
+
+<ion-menu-controller></ion-menu-controller>

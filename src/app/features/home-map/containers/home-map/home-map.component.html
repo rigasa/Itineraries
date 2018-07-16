@@ -1,9 +1,5 @@
-<ion-header>
-    <ion-toolbar color="primary">
-        <ion-title>{{ pageTitle }}</ion-title>
-    </ion-toolbar>
-</ion-header>
+<app-home-page-header></app-home-page-header>
 
 <ion-content>
-    <app-map [mapSettings]="defaultSettings"></app-map>
+    <app-map [mapSettings]="defaultSettings" [mapMarkers]="itineraries$" [mapContext]="this"></app-map>
 </ion-content>

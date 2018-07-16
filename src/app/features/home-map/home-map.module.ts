@@ -6,12 +6,14 @@ import { IonicModule } from '@ionic/angular';
 import { HomeMapRoutingModule } from './home-map.routing';
 import { HomeMapComponent } from './containers/home-map/home-map.component';
 import { SharedModule } from '../../shared/shared.module';
-
+import { HomePageHeaderModule } from '../home-page-header/home-page-header.module';
+//--------------------
 @NgModule({
   imports: [
     SharedModule,
     IonicModule,
-    HomeMapRoutingModule
+    HomeMapRoutingModule,
+    HomePageHeaderModule
   ],
   declarations: [HomeMapComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

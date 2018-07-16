@@ -1,12 +1,92 @@
-<p>
-    itinerary-points works!
-</p>
-<ion-list>
-    <!-- <ion-item text-wrap button detail (click)="goItinerary( itinerary )">
-    <ion-label>
-        <ion-text color="primary">
-            <h2>{{itinerary?.iti_name}}</h2>
-        </ion-text>
-    </ion-label>
-</ion-item> -->
-</ion-list>
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+
+            <ion-button (click)="toDismiss()">
+                <ion-icon slot="icon-only" name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+        <ion-title>
+            <ion-icon slot="icon-only" name="list"></ion-icon> {{ language["POINTS_LIST"] }}</ion-title>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="filterPoints">
+
+        <ion-segment-button value="0" checked>
+            Objets
+        </ion-segment-button>
+        <ion-segment-button value="1">
+            Thèmes
+        </ion-segment-button>
+        <ion-segment-button value="2">
+            Focus
+        </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="filterPoints">
+        <ion-list *ngSwitchCase="iconsType[0]">
+            <ion-item>
+                <h2>Objet 1</h2>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'themes'">
+            <ion-item>
+                <h2>Thème 1</h2>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'focus'">
+            <ion-item>
+                <h2>Focus 1</h2>
+            </ion-item>
+        </ion-list>
+    </div>
+    <!-- 
+        {
+    "id": "1",
+    "imk_ref": "0",
+    "imk_type": "0",
+    "imk_lat": "46.174026",
+    "imk_lng": "6.0842",
+    "imk_icon": "marker-1.png",
+    "imk_iconActive": "marker-1-select.png",
+    "imk_shadow": "shadow-default.png",
+    "imk_shape": "",
+    "imk_shortTitle": "Place de l'Eglise",
+    "imk_title": "Pour une Place de l'Eglise conviviale et «haut de gamme»",
+    "imk_index_Z": "4",
+    "imk_created": "2011-06-07 17:09:48",
+    "imk_modified": "2011-06-07 17:09:48",
+    "imk_lang": "fr_FR"
+  }
+    -->
+
+    <ion-list *ngIf="(points$|async) as iti;else noPoints">
+
+        <div *ngFor="let point of iti?.ItineraryMarkers?.datas">
+
+            <ion-item-sliding ion-item [ngClass]="['icon-point', 'icon-' + iconsType[point.imk_type] ]">
+
+                <ion-item text-wrap button detail (click)="goPoint( point )">
+                    <ion-label>
+                        <ion-text color="primary">
+                            <h2 [ngClass]="['icon-' + iconsType[point.imk_type] + '-' + point.imk_ref ]">{{point?.imk_shortTitle}}</h2>
+                        </ion-text>
+                    </ion-label>
+                </ion-item>
+
+                <ion-item-options side="end">
+                    <ion-item-option expandable>
+                        <ion-icon name="heart" (click)="setFavorit( point )"></ion-icon>
+                    </ion-item-option>
+                </ion-item-options>
+
+            </ion-item-sliding>
+        </div>
+    </ion-list>
+    <ng-template #noPoints>Chargement des points, veuillez patienter...</ng-template>
+</ion-content>

@@ -1,3 +1,4 @@
+// https://codingthesmartway.com/angular-material-and-angular-6-material-design-for-angular/
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, RouteReuseStrategy, Routes } from '@angular/router';
@@ -15,6 +16,8 @@ import { enableProdMode } from '@angular/core';
 // STORAGE
 import { IonicStorageModule } from '@ionic/storage';
 
+// AUTH
+
 // PIPES
 
 enableProdMode();
@@ -26,7 +29,7 @@ enableProdMode();
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    ServiceWorkerModule.register('./ngsw-worker.js',
+    ServiceWorkerModule.register('/ngsw-worker.js',
     { enabled: environment.production }),
     IonicStorageModule.forRoot()
   ],

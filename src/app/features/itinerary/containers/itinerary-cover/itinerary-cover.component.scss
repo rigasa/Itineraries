@@ -19,23 +19,28 @@ ion-card-title {
     word-wrap: break-word;
 }
 
-.card-content h4 {
+ion-card-content h4 {
     color: #651E92;
     font: 120%/130% "ITCFranklin", Arial, Helvetica, Geneva, sans-serif;
     margin-bottom: 0;
     padding-bottom: 5px;
-    margin-top: 25px;
+    margin-top: 25px !important;
 }
 
-.card-content h4:first-child {
-    margin-top: 0px;
+ion-card-content h4:first-child {
+    margin-top: 0px !important;
 }
 
-.card-content p {
+ion-card-content p,
+{
     font-size: 14px;
     line-height: 150%;
     margin-bottom: 5px;
     margin-top: 0;
+}
+
+ion-card-content p img.logo-intern {
+    margin: 0px auto;
 }
 
 table.car {
@@ -83,4 +88,8 @@ td.car2 {
     height: auto;
     box-shadow: none !important;
     text-align: center;
+}
+
+.toolbar-title {
+    font-family: "ITCFranklin", Arial, Helvetica, Geneva, sans-serif;
 }

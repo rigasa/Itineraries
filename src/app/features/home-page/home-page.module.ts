@@ -5,12 +5,15 @@ import { IonicModule } from '@ionic/angular';
 
 import { HomePageRoutingModule } from './home-page.routing';
 import { HomePageComponent } from './containers/home-page/home-page.component';
-
+//--------------------
+import { HomePageHeaderModule } from '../home-page-header/home-page-header.module';
+//--------------------
 @NgModule({
   imports: [
     CommonModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HomePageHeaderModule
   ],
   declarations: [HomePageComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
